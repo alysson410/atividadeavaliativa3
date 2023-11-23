@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 
 int main(){
 int meses = 0;
@@ -14,7 +16,7 @@ montante_mensal = valor_investido;
 
 for(int i = 1; i <= meses; i++){
     printf("Montante ao fim do mes %d: R$ %.2f\n", i, montante_mensal);
-    montante_mensal *= (1 + taxa_juros);
+    montante_mensal = valor_investido * pow(1 + taxa_juros, i);
 }
 
 
