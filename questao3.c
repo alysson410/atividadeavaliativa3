@@ -12,7 +12,7 @@ int main(){
  scanf("%8[^\n]", placas);
  scanf("%13[^\n]", dias);
 
-    switch(char placa == 0){
+    switch(char placa ){
         case 0: case 1:
             if(strcmp(dia, "SEGUNDA-FEIRA") == 0){
                 printf("%s nao pode circular segunda-feira\n", placa);

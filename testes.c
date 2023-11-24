@@ -3,20 +3,23 @@
 
 
 int main(){
-int meses = 0;
-float valor_investido = 0;
-float taxa_juros = 0;
-float montante_mensal = 0;
+int t;
+double a;
+double i;
+double v;
 
-scanf("%d", &meses);
-scanf("%f", &valor_investido);
-scanf("%f", &taxa_juros);
+scanf("%d", &t);
+scanf("%lf", &a);
+scanf("%lf", &i);
 
-montante_mensal = valor_investido;
+v = a * (1 + i) * (pow(1 + i, t) - 1) / i;
 
-for(int i = 1; i <= meses; i++){
-    printf("Montante ao fim do mes %d: R$ %.2f\n", i, montante_mensal);
-    montante_mensal = valor_investido * pow(1 + taxa_juros, i);
+for(int j = 1; j <= t; j++){
+  if(i != 0){
+     printf("Montante ao fim do mes %d: R$ %.2lf\n", j, a);
+  }else{
+    return 0;
+  }
 }
 
 
