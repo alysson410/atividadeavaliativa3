@@ -40,28 +40,28 @@ switch(ultimo_digito){
                 printf("%s pode circular segunda-feira\n", placa);
             }
             break;
-        case 2: case 3:
+        case '2': case '3':
             if(strcmp(dia, "TERCA-FEIRA") == 0){
                 printf("%s nao pode circular terca-feira\n", placa);
             }else{
                 printf("%s pode circular terca-feira\n", placa);
             }
             break;
-        case 4: case 5:
+        case '4': case '5':
             if(strcmp(dia, "QUARTA-FEIRA") == 0){
                 printf("%s nao pode circular quarta-feira\n", placa);
             }else{
                 printf("%s pode circular quarta-feira\n", placa);
             }
             break;
-        case 6: case 7:
+        case '6': case '7':
             if(strcmp(dia, "QUINTA-FEIRA") == 0){
                 printf("%s nao pode circular quinta-feira\n", placa);
             }else{
                 printf("%s pode circular quinta-feira\n", placa);
             }
             break;
-        case 8: case 9:
+        case '8': case '9':
             if(strcmp(dia, "SEXTA-FEIRA") == 0){
                 printf("%s nao pode circular sexta-feira\n", placa);
             }else{
@@ -81,3 +81,4 @@ switch(ultimo_digito){
     
 
     return 0;
+}
