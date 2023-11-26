@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-
+//concluida
 int main(){
 int t;
 double a;

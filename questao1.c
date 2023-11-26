@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+// concluida
 int valor_romano(char r){
   switch(r){
     case 'I': return 1;
