@@ -1,19 +1,39 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
+char validaultimodigito(char* placa){
+    int ultima_posicao = strlen(placa) - 1;
+    return placa[ultima_posicao];
+    
+}
 
-
-
+// isalpha() checar letras
+// isdigit() checar numeros
 
 int main(){
- char placas[8];
- char dias[13];
+ char placa[8];
+ char dia[13];
+ 
 
- scanf("%8[^\n]", placas);
- scanf("%13[^\n]", dias);
+ scanf("%8[^\n]", placa);
+ scanf(" %13[^\n]", dia);
 
-    switch(char placa ){
-        case 0: case 1:
+char ultimo_digito = validaultimodigito(placa);
+
+ 
+
+            if(strcmp(dia, "SABADO") == 0){
+                printf("Nao ha proibicao no fim de semana\n");
+            }
+            
+            
+            else if(strcmp(dia, "DOMINGO") == 0){
+                printf("Nao ha proibicao no fim de semana\n");
+            } else{
+switch(ultimo_digito){
+        // colocar ' em cada case
+        case '0': case '1':
             if(strcmp(dia, "SEGUNDA-FEIRA") == 0){
                 printf("%s nao pode circular segunda-feira\n", placa);
             }else{
@@ -48,20 +68,16 @@ int main(){
                 printf("%s pode circular sexta-feira\n", placa);
             }
             break;
-            case 10: case 11:
-            if(strcmp(dia, "SABADO") == 0){
-                printf("Nao ha proibicao no fim de semana\n");
+}
             }
-            break;
-            case 12: case 13:
-            if(strcmp(dia, "DOMINGO") == 0){
-                printf("Nao ha proibicao no fim de semana\n");
-            }
-            break;
+            
+
+    
+
+            
     
     
 
-    }
+    
 
     return 0;
-}
