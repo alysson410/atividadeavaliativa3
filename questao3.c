@@ -8,6 +8,22 @@ char validaultimodigito(char* placa){
     
 }
 
+    int valida_placa(char placa[]){
+
+        // checando placa antiga (LLL-NNNN)
+        if(strlen(placa) == 8 && isalpha(placa[0]) && isalpha(placa[1]) && isalpha(placa[2]) && 
+            placa[3] == '-' && isdigit(placa[4]) && isdigit(placa[5]) && isdigit(placa[6]) && isdigit(placa[7])){
+                
+            }else if(strlen(placa) == 8 && isalpha(placa[0]) && isalpha(placa[1]) && isalpha(placa[2]) && 
+            isdigit(placa[3]) && isalpha(placa[4]) && isdigit(placa[5]) && isdigit(placa[6])){
+
+            }else{
+                return 1;
+            }
+   
+    }
+
+
 // isalpha() checar letras
 // isdigit() checar numeros
 
@@ -21,6 +37,11 @@ int main(){
 
 char ultimo_digito = validaultimodigito(placa);
 
+
+if(valida_placa(placa) == 1){
+    printf("Placa invalida\n");
+}
+ 
  
 
             if(strcmp(dia, "SABADO") == 0){
@@ -32,7 +53,7 @@ char ultimo_digito = validaultimodigito(placa);
                 printf("Nao ha proibicao no fim de semana\n");
             } else{
 switch(ultimo_digito){
-        // colocar ' em cada case
+        
         case '0': case '1':
             if(strcmp(dia, "SEGUNDA-FEIRA") == 0){
                 printf("%s nao pode circular segunda-feira\n", placa);
@@ -69,16 +90,11 @@ switch(ultimo_digito){
             }
             break;
 }
+
             }
             
-
-    
-
-            
-    
-    
-
-    
+ 
 
     return 0;
 }
+
