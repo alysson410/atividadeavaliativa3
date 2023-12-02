@@ -84,6 +84,7 @@ switch(ultimo_digito){
                 converterMinusculo(dia);
                 printf("%s nao pode circular %s\n", placa, dia);
             }else{
+converterMinusculo(dia);
                 printf("%s pode circular %s\n", placa, dia);
             }
             break;
@@ -92,27 +93,34 @@ switch(ultimo_digito){
                 converterMinusculo(dia);
                 printf("%s nao pode circular %s\n", placa, dia);
             }else{
-                printf("%s pode circular %s\n", placa, dia);
+converterMinusculo(dia);
+             printf("%s pode circular %s\n", placa, dia);
             }
             break;
         case '4': case '5':
             if(strcmp(dia, "QUARTA-FEIRA") == 0){
+converterMinusculo(dia);
                 printf("%s nao pode circular %s\n", placa, dia);
             }else{
+              converterMinusculo(dia);  
                 printf("%s pode circular %s\n", placa, dia);
             }
             break;
         case '6': case '7':
+          converterMinusculo(dia); 
             if(strcmp(dia, "QUINTA-FEIRA") == 0){
                 printf("%s nao pode circular %s\n", placa, dia);
             }else{
+             converterMinusculo(dia);
                 printf("%s pode circular %s\n", placa, dia);
             }
             break;
         case '8': case '9':
+          converterMinusculo(dia);
             if(strcmp(dia, "SEXTA-FEIRA") == 0){
                 printf("%s nao pode circular %s\n", placa, dia);
             }else{
+             converterMinusculo(dia);  
                 printf("%s pode circular %s\n", placa, dia);
             }
             break;
