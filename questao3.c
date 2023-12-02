@@ -106,9 +106,9 @@ converterMinusculo(dia);
                 printf("%s pode circular %s\n", placa, dia);
             }
             break;
-        case '6': case '7':
-          converterMinusculo(dia); 
+        case '6': case '7': 
             if(strcmp(dia, "QUINTA-FEIRA") == 0){
+                converterMinusculo(dia);
                 printf("%s nao pode circular %s\n", placa, dia);
             }else{
              converterMinusculo(dia);
@@ -116,8 +116,8 @@ converterMinusculo(dia);
             }
             break;
         case '8': case '9':
-          converterMinusculo(dia);
             if(strcmp(dia, "SEXTA-FEIRA") == 0){
+                converterMinusculo(dia);
                 printf("%s nao pode circular %s\n", placa, dia);
             }else{
              converterMinusculo(dia);  
